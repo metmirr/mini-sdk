@@ -1,0 +1,38 @@
+{
+  "name": "@metmirr/mini-sdk",
+  "version": "0.0.2",
+  "description": "A mini ts/js sdk",
+  "main": "lib/index.js",
+  "repository": "git@github.com:metmirr/mini-sdk.git",
+  "files": [
+    "lib",
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rm -rf lib && tsc",
+    "lint": "eslint \"{src,test}/**/*.ts\" --fix",
+    "test": "node lib/tests.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bn.js": "^5.1.0",
+    "@types/node": "^18.7.13",
+    "@typescript-eslint/eslint-plugin": "^5.35.1",
+    "@typescript-eslint/parser": "^5.35.1",
+    "eslint": "^8.23.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.2"
+  },
+  "dependencies": {
+    "@subsquid/ss58-codec": "^0.1.0",
+    "base-x": "^4.0.0",
+    "blake2b": "^2.1.4",
+    "bn.js": "^5.2.1"
+  }
+}
